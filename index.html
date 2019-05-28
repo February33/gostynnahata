@@ -1,40 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Markup Sample</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+<style>
+
+   .text {
+    text-align:  center;
+    font-size:32px;
+   }
+
+</style>
 </head>
+
 <body>
     <h1>Ресторан Гостинна Хата</h1>
     <header>
         <nav>
             <ul>
-                <li><a href=#Головна">Головна</a></li>
-                <li><a href=#Доставка">Доставка</a></li>
-                <li><a href=#Про нас">Про нас</a></li>
-                <li><a href=#Контакти">Контакти</a></li>
+                <li><a href="#Головна">Головна</a></li>
+                <li><a href="#Доставка">Доставка</a></li>
+                <li><a href="#Про_нас">Про нас</a></li>
+                <li><a href="#Контакти">Контакти</a></li>
             </ul>
         </nav>
     </header>
+    
     <h2>Головна</h2>
-     <section id="Головна">
+      <section id="Golovna">
      
-    <img src="img/gostynna.jpg" alt="gostynna" width="600px"; height="300px">
-    <img src="img/gostynnah.jpg" alt="gostynnah" width="600px"; height="300px">
-    <img src="img/gostynnaha.jpg" alt="gostynnaha" width="600px"; height="300px">
-    <img src="img/gostynnahat.jpg" alt="gostynnahat" width="600px"; height="300px">
+    <img src="img/gostynna.jpg" alt="gostynna" width="900" height="600">
+    <img src="img/gostynnah.jpg" alt="gostynnah" width="900" height="600">
+    <img src="img/gostynnaha.jpg" alt="gostynnaha" width="900" height="600">
+    <img src="img/gostynnahat.jpg" alt="gostynnahat" width="900" height="600">
     
     </section>
-     <p>Неподалік від траси Львів-Самбір, в мальовничому лісі поблизу с. Оброшино розташувався ресторан «Гостинна хата». Сама назва свідчить про те, що атмосфера тут привітна, а кухня по-домашньому смачна.
+     
+     <div class="text">
+       <p>
+        Неподалік від траси Львів-Самбір, в мальовничому лісі поблизу с. Оброшино розташувався ресторан «Гостинна хата». Сама назва свідчить про те, що атмосфера тут привітна, а кухня по-домашньому смачна.
 
-Великий літній майданчик дозволяє відпочити на свіжому повітрі, а сам ресторан, виконаний в традиційному українському стилі — ідеальне місце для святкування весіль, банкетів і просто зустрічей з друзями та діловими партнерами. Сб-нд з 19:00 до 23:00 гостей ресторану розважають концерти живої музики. Тут привітний персонал, чисте повітря і безліч цікавих страв. Ресторан також надає послуги кейтерінгу.
+        Великий літній майданчик дозволяє відпочити на свіжому повітрі, а сам ресторан, виконаний в традиційному українському стилі — ідеальне місце для святкування весіль, банкетів і просто зустрічей з друзями та діловими партнерами. Сб-нд з 19:00 до 23:00 гостей ресторану розважають концерти живої музики. Тут привітний персонал, чисте повітря і безліч цікавих страв. Ресторан також надає послуги кейтерінгу.
 
-Ресторан «Гостинна Хата» — гостинно запрошуємо!</p>
+        Ресторан «Гостинна Хата» — гостинно запрошуємо!</p>
+      </div>
+
+
 <h3>Доставка</h3>
- <section id="Доставка">
-     <p>Оплатити замовлення Ви можете:
+ <section id="Dostavka">
+    <div class="text"> 
+    <p>Оплатити замовлення Ви можете:
 
 готівкою;
 терміналом;
@@ -51,37 +68,46 @@
 МТС +380503737919
 
 Київстар +380673737919
+</p>
+</div>
+</section>
+
  <form method="POST" action="https://formspree.io/lytuy65@gmail.com">
-         </label>
-            <br>
-            <label for="your-name">Your Name:</label>
-            <input id="your name" type="text" name="your-name" placeholder="Your Name" required>
+          
+          <br>
+          <label>Your Name: 
+                <input type="number" name="Your-number"
+                 placeholder="Your Number" required>      
+            </label>
+            
             <br>
             <label>Your Number: 
                 <input type="number" name="Your-number"
-                  placeholder="Your Number" required>      
+                 placeholder="Your Number" required>      
             </label>
+
             <br>
             <label>Your message:
                 <textarea name="message" placeholder="Message"></textarea>
             </label>
+            
             <br>
             <input type="submit">
             <input type="reset">
         </form>
-</p>
+
   <h3>Про нас</h3>
-   <section id="Про нас">
-    <p>Вас вітає «Гостинна Хата" - найкращий ресторан української кухні у Львові!
+
+   <section id="About">
+   <div class="text">
+        <p>Вас вітає «Гостинна Хата" - найкращий ресторан української кухні у Львові!
     Головний пріоритет – висока якість їжі та сервісу. Ми - команда професіоналів, яка щодня працює для Вас.
     Ми використовуємо тільки якісні свіжі продукти та зручне упакування для страв.
-    </p>
-    <h4>Контакти</h4>
-    <p1>
-        
-    </p1>
-     <section id="Контакти">
-         
-   </body>
+    </p> </div>
+
+         <span>Львів 2019</span>
+
+</section>
+</body>
 
 </html>
